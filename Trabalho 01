@@ -1,0 +1,53 @@
+Anna Júlia de Oliveira Souza - 123662
+
+Questão 01 - I- A afirmativa está correta em partes, pois a camada responsável pela correção/controle de erros é a de Enlace de dados. 
+II - A camada de Enlace não é responsável por comprimir os dados, de resto a afirmação está correta.
+III - A afirmativa é incorreta, pois a função da camada de transporte é promover/fornecer comunicação de ponta a ponta de maneira confiável e eficiente.
+
+Questão 02 - Modelo OSI: 7 camadas:
+Camada Física: A camada física se refere ao meio físico de comunicação e às tecnologias para transmitir dados por esse meio.
+Camada de Enlace de Dados: A camada de enlace de dados se refere às tecnologias usadas para conectar duas máquinas em uma rede onde a camada física já existe. Ela gerencia quadros de dados, que são sinais digitais encapsulados em pacotes de dados. O controle de fluxo e o controle de erros de dados geralmente são os principais focos da camada de enlace de dados.
+Camada de Rede: A camada de rede se preocupa com conceitos como roteamento, encaminhamento e endereçamento em uma rede dispersa ou em várias redes conectadas de nós ou de máquinas. A camada de rede também pode gerenciar o controle de fluxo.
+Camada de Transporte: O foco principal da camada de transporte é garantir que os pacotes de dados cheguem na ordem correta, sem perdas nem erros, ou que possam ser recuperados sem complicações, se necessário. O controle de fluxo, em conjunto com o controle de erros, é frequentemente um foco na camada de transporte.
+Camada de Sessão: A camada de sessão é responsável pela coordenação de rede entre duas aplicações separadas em uma sessão. Uma sessão gerencia o início e o término de uma conexão individual de aplicações e conflitos de sincronização.
+Camada de Apresentação: Responsável pela tradução, compressão e criptografia dos dados para que possam ser entendidos pelo receptor. Ela também gerencia a sintaxe e a semântica das informações transmitidas.
+Camada de Aplicação: A camada de apresentação se preocupa principalmente com a sintaxe dos próprios dados para as aplicações enviarem e consumirem.
+
+Modelo TCP/IP: 4 camadas:
+Camada de Acesso à Rede: Responsável pela comunicação com a rede física e detalhes como endereçamento físico e controle de fluxo.
+Camada da Internet: Gerencia o roteamento dos pacotes IP entre diferentes redes, utilizando roteadores para determinar o melhor caminho.
+Camada de Transporte:  Fornece entrega confiável e ordenada de dados entre hosts, utilizando protocolos como TCP e UDP.
+Camada de Aplicação: Incorpora funcionalidades das camadas de Sessão, Apresentação e Aplicação do modelo OSI. Fornece serviços de rede diretamente às aplicações do usuário.
+
+A diferença entre os dois modelos reside na sua abordagem e complexidade. Enquanto o Modelo OSI é uma representação teórica que identifica sete camadas distintas, o Modelo TCP/IP é pragmático, consolidando as funções de rede em apenas quatro camadas. O Modelo OSI é notavelmente detalhado, o que facilita a compreensão das operações de rede ao dividir claramente as funções em camadas específicas. Por outro lado, o Modelo TCP/IP é mais amplamente adotado na prática, ele simplifica as camadas, integrando várias funções em cada uma delas, resultando em uma implementação e operação mais eficientes.
+
+Questão 03 - a) Há a topologia estrela, barramento, anel, árvore, malha/mash e a híbrida.
+b) A escolha da topologia de rede ideal para uma determinada situação é influenciada por diversos fatores. Frequentemente, uma abordagem combinada de diferentes topologias é adotada para atender às necessidades específicas da rede. Por exemplo, em ambientes empresariais de grande porte, pode ser vantajoso utilizar uma mistura de topologias. Essa estratégia proporciona um equilíbrio entre desempenho e confiabilidade, garantindo uma conectividade eficaz e robusta em toda a rede.
+
+Questçao 04 - I- Correta.
+II- Incorreta, Metropolitan Area Network, ou Rede de Área Metropolitana, é um escopo de rede intermediárioentre uma LAN e uma WAN.Trata-se de uma rede localizada em uma área geográfica confinada e bem definida, de tamanhomédio, como por exemplo em um município ou região metropolitana.
+III- Incorreta, Wide Area Network, ou Rede de Área Ampla. Em uma WAN a comunicação se dá em umadistância relativamente (ou muito) longa. Podemos usar uma WAN para conectar uma LAN em um local a outra LAN em um local remoto, que pode estar localizada em um prédio vizinho ou do outro lado do planeta.
+
+Questão 05 - O IPv4 e o IPv6 são protocolos de internet, sendo o IPv4 o predominante por décadas. O IPv4 usa endereços de 32 bits, permitindo cerca de 4.3 bilhões de endereços, enquanto o IPv6 utiliza endereços de 128 bits, possibilitando um número quase ilimitado de endereços únicos.
+A notação IPv4 tem quatro conjuntos de números decimais, enquanto o IPv6 tem oito conjuntos de dígitos hexadecimais. O IPv6 melhora segurança e privacidade, incluindo recursos como autenticação de pacotes. Enquanto o IPv4 exige configuração manual ou dinâmica, o IPv6 suporta endereçamento automático e dinâmico. 
+O IPv6 surgiu devido à exaustão do espaço de endereçamento do IPv4 e à necessidade de acomodar o crescimento contínuo da internet.
+
+Questão 06 - O intervalo correto para cada octeto de um endereço de IP é de 0 a 255, portanto seria necessário corrigir o segundo e o último octeto (contém valores acima de 255).
+
+Questão 07 - IP: 192.128.100.15 e em binário = 11000000.10101000.01100100.00001111
+Máscara de sub-rede: 255.255.0.0 e em binário = 11111111.11111111.00000000.00000000
+
+Questão 08 - IP em binário = 11001000.10000000.10100100.11100010
+Máscara de sub-rede: 255.255.255.192 e em binário = 11111111.11111111.11111111.11000000
+AND 11001000.10000000.10100100.11100010
+11111111.11111111.11111111.11000000
+= 11001000.10000000.11000000 
+= 200.128.164.192
+
+Questão 09 - a) 11111111.11111111.11111111.11110000 - Logo, a máscara de sub-rede = 255.255.255.240
+b) 2^n - 2 = 2^4 - 2 = 16-2 = 14 hosts.
+c) 192.168.1.15
+
+Questão 10 - 2^n - 2 ≥ 50 = 2^6 - 2 = 62 hosts.
+32 - 6 = 26 bits
+255.255.255.192 ou /26
